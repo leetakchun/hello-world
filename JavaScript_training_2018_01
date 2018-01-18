@@ -1,0 +1,25 @@
+var myCar = {
+  "model" = "Ferris",
+  "number" = "458",
+  "engine" = "V8",
+  "year" = "2017",
+  "passenger" = 2,
+  started = false,
+  
+  start = function (){
+    this.started = true;
+    },
+  stop = function (){
+    this.started = false;
+    },
+  
+  drive = function(){
+    if (this.started){
+      alert("Go Go Go !!!");
+      }else{
+      alert("You have to start the engine first!");
+   }
+}
+
+
+  
